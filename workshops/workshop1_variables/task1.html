@@ -43,24 +43,21 @@
     <script>
         const PlayerName = "Kidd" 
             document.getElementById("playername").innerHTML = PlayerName
-
         let StartOfLives = "5" 
             document.getElementById("lives-count").innerHTML = StartOfLives
-
-        let StartCoins = "1337" 
-            document.getElementById("coins-count").innerHTML = StartCoins
-
+        let Coins = "15" 
+            document.getElementById("coins-count").innerHTML = Coins
         let Weaponlongsword = "5" 
             document.getElementById("weapon-longsword").innerHTML = Weaponlongsword
-
         let Warhammer = "5" 
             document.getElementById("weapon-warhammer").innerHTML = Warhammer
-
         let Battleaxe = "5" 
             document.getElementById("weapon-battleaxe").innerHTML = Battleaxe
-
-        let Weaponarmour = "1337" 
+        let Weaponarmour = "10" 
             document.getElementById("weapon-armour").innerHTML = Weaponarmour
+        
+        let points = (Coins * 5) + (Weaponlongsword * 5) + (Warhammer * 15) + (Battleaxe * 20) + (Weaponarmour * 25)
+        document.getElementById("points-count").innerHTML = points
 //coins = 5 pts
 //longsword level = 5tps
 //warhammer level = 15pts 
