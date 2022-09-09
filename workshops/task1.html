@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Workshop 1: Variabler</title>
+    <link href="task1.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <div id="gamearea">
+        <section id="hud-top">
+            <div id="lives"><img src="img/potions.png" /> <span id="lives-count">0</span></div>
+            <div id="coins"><img src="img/coins.png" /> <span id="coins-count">0</span></div>
+            <div id="player">
+                <img src="img/person.png" />
+                <span id="playername">Marius</span>   
+            </div>
+            <div id="points"><img src="img/points.png" /> <span id="points-count">0</span></div>
+        </section>
+        <aside id="hud-inventory">
+            <h3>Armory</h3>
+            <table id="showhide">
+                <tr>
+                    <td><img src="img/longsword.png"></td>
+                    <td>Level: <span id="weapon-longsword"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="img/warhammer.png"></td>
+                    <td>Level: <span id="weapon-warhammer"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="img/battleaxe.png"></td>
+                    <td>Level: <span id="weapon-battleaxe"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="img/armour.png"></td>
+                    <td>Level: <span id="weapon-armour"></span></td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+    <script>
+        const PlayerName = "Kidd" 
+            document.getElementById("playername").innerHTML = PlayerName
+        let StartOfLives = "5" 
+            document.getElementById("lives-count").innerHTML = StartOfLives
+        let Coins = "15" 
+            document.getElementById("coins-count").innerHTML = Coins
+        let Weaponlongsword = "5" 
+            document.getElementById("weapon-longsword").innerHTML = Weaponlongsword
+        let Warhammer = "5" 
+            document.getElementById("weapon-warhammer").innerHTML = Warhammer
+        let Battleaxe = "5" 
+            document.getElementById("weapon-battleaxe").innerHTML = Battleaxe
+        let Weaponarmour = "10" 
+            document.getElementById("weapon-armour").innerHTML = Weaponarmour
+        
+        let points = (Coins * 5) + (Weaponlongsword * 5) + (Warhammer * 15) + (Battleaxe * 20) + (Weaponarmour * 25)
+        document.getElementById("points-count").innerHTML = points
+//coins = 5 pts
+//longsword level = 5tps
+//warhammer level = 15pts 
+//Battleaxe level = 20pts
+//armour level = 25pts
+
+
+    </script>
+
+</body>
+</html>
